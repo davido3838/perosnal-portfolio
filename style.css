@@ -1,0 +1,233 @@
+
+
+/* mandatory */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+
+
+body{
+     background-color: #081b29;
+    /* adding now after adding paragraph */ color: #ededed;
+     color: #ededed;
+
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background:  /*yellowgreen; */ transparent;
+
+    /* this is the defualt ^ ^ ^  */
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;/* blend the color of body */
+
+    /*  to put links right and logo left ^ ^ ^ */
+    }
+
+
+    /* next is the logo in header */
+    .logo{
+        font-size: 25px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 600;
+
+    }
+
+    /*  now the links in navbar */
+     nav a{
+        font-size: 18px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 35px; /* seperates the links to your accord */
+         /* 3 seconds of the hover */
+          }
+
+     nav a:hover, nav a.active {
+      color: #008bf0;
+     }
+      
+
+     /* Home -- Main Page -- front page -- */
+
+       .home{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+          /*  this moves the heading and 
+          paragraph down central  */
+
+          padding: 0 10%;   /* moves away from ends of left right  */
+
+
+          /* For the photo right side of homescreen done this last below */
+
+              background: url('') no-repeat; 
+              background-size: cover;
+              background-position: right; 
+              background-repeat: no-repeat;
+
+       }
+
+       .home-content{
+          /*      onlybused to help you see and control height  background: yellowgreen; */ 
+        max-width: 600px;
+          
+       }
+       .home-content h1{
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.2;  /* gap small h1 and h3*/
+       }
+       .home-content h3{
+        font-size: 32px;
+        font-weight: 700;
+        color: #008bf0;
+       }
+       .home-content p{
+        font-size: 16px;
+        margin: 20px 0 40px; /* gap beween p and h 3*/
+       }
+       .home-content .btn-box {    /* gap plus . important */
+           display: flex;
+           justify-content: space-between;  /* moves the border boxes to left of the yellow green and right the ends*/
+          width: 345px;
+          height: 50px;
+           /* background: yellowgreen;  */
+       }
+         
+
+                 /* defualt hire me or search button */
+        
+    .btn-box a{
+        display: inline-flex;
+        width: 150px;
+        height: 100%;
+        background: #008bf0;
+        border: 2px solid #008bf0;
+        border-radius: 8px;
+        font-size: 19px;
+        color: #081b29;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+        justify-content: center;  /* up down in box*/
+        align-items: center;    /*left right in box border */
+
+
+       position: relative; /* start with this if want to add feature to the link box*/
+       z-index: 1;
+       overflow: hidden;
+       transition: .5s;
+
+       }
+
+       .btn-box a:hover {
+         color: #008bf0;
+       }
+
+       
+             /* Let's Talk */
+
+      .btn-box a:nth-child(2)   {  /* this means second a link in the btn box class  */
+          background: transparent;
+          color: #008bf0;
+          
+         } 
+          .btn-box a:nth-child(2):hover{
+            color: #081b29;
+          }
+
+         .btn-box a:nth-child(2)::before{
+           background: #008bf0;
+         }
+ 
+              
+         /* just cool feature */
+
+         .btn-box a::before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background:  /*red;*/ #081b29;
+          z-index: -1;
+          transition: .5s;
+         }
+
+         .btn-box a:hover::before {
+          width: 100%;
+         }
+
+         /*   CONTACT LOGOS links */
+
+         .home-sci{
+              position: absolute;
+              bottom: 40px;
+              width: 170px;
+               /*background: red;*/
+
+              display: flex; /* allow the logo to be spread out */
+              justify-content: space-between;
+         }
+         .home-sci a{       /* seperstes the 3 logo contact links */
+          display: inline-flex;
+          width: 40px;
+          height: 40px;
+          background: transparent;
+          border: 2px solid  #008bf0;
+          border-radius: 50%;    /* circle*/
+          font-size: 20px;       /* size of logo*/
+          color: #008bf0;
+          text-decoration: none; 
+ 
+          transition: .5s;  /* for logo contanct interaction */
+
+
+          /* this for the interaction logo*/
+
+          z-index: 1;
+          overflow: hidden;
+         /* these two center logos central */
+          justify-content: center;
+          align-items: center;    
+
+          /* make logos interactive this first */
+          position: relative;
+         }
+         .home-sci a::before{
+           content: '';
+           position: absolute;
+           top: 0;
+           left: 0;
+           width:  /*100%   */ 0;
+           height: 100%;
+           background: /* red; */ #008bf0;
+           z-index: -1;
+           transition: .5s;;
+
+         }
+
+         .home-sci a:hover::before{
+          width: 100%;
+         }
+
+         .home-sci a:hover{
+          color: #081b29;
+         } the story bey
